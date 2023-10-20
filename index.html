@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>BDC-Adapter:Brownian Distance Covariance for Better Vision-Language Reasoning</title>
+  <title>BDC-Adapter: Brownian Distance Covariance for Better Vision-Language Reasoning</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -167,9 +167,9 @@
         <div class="content has-text-justified">
           <p>
             <ul>
-              <li>The current state-of-the-art Tip-Adapter method, establishes a key-value cache model and evaluates the similarities of the query image feature and features of support few-shot training samples to perform classification.</li>
-              <li>However, we recognize that Tip-Adapter simply considers the covariance between each image feature pair, which only measures marginal distributions and captures linear relations.</li>
-              <li>In this paper, we introduce Brownian Distance Covariance (BDC) to the field of vision-language reasoning to provide a robust metric for measuring feature dependence. While classical covariance can only capture linear relations, Brownian covariance can model all possible relations.</li>
+              <li><b>Multi-Modal Few-Shot Learning</b>. After feature extraction, we concatenate the image and text features and use this joint features to train a one-layer multi-modal reasoning network by cross-entropy loss。</li>
+              <li><b>Class-Specific BDC Prototype Generation</b>. Given all the BDC matrices of M images within class y, we define the prototype of class y to be the average of the BDC matrices.</li>
+              <li><b>BDC-Adapter Inference</b>. During inference, BDC-Adapter integrates BDC prototype similarity reasoning and multi-modal reasoning network prediction to perform classification tasks.</li>
             </ul>
           </p>
         </div>
@@ -192,18 +192,31 @@
         <div class="item">
         <!-- Your image here -->
         <img src="static/images/main.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Performance comparisons on few-shot learning on 11 datasets. For each dataset, we report the accuracy on 1-/2-/4-/8-/16-shot settings. The top-left subfigure shows the average accuracy over all 11 datasets.
+        </h2>
+          
       </div>
         <div class="item">
         <!-- Your image here -->
         <img src="static/images/tab1.png" alt="MY ALT TEXT"/>
+                  <h2 class="subtitle has-text-centered">
+         Performance comparisons on robustness to natural distribution shifts. All the experiments are conducted with ResNet-50 visual backbone. The best results are in bold and the second are underlined.
+        </h2>
       </div>
         <div class="item">
         <!-- Your image here -->
         <img src="static/images/example.png" alt="MY ALT TEXT"/>
+                  <h2 class="subtitle has-text-centered">
+          Illustration of a few-shot learning instance from the Bongard-HOI benchmark.
+        </h2>
       </div>
         <div class="item">
         <!-- Your image here -->
         <img src="static/images/tab2.png" alt="MY ALT TEXT"/>
+                  <h2 class="subtitle has-text-centered">
+          Performance comparisons on the Bongard-HOI dataset. The last column shows the average accuracy. The best results are in bold and the second are underlined.
+        </h2>
       </div>
       </div>
     </div>
@@ -225,8 +238,6 @@
 </section>
   
 <!-- End video carousel -->
-
-
 
 
 
