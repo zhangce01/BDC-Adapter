@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>BDC-Adapter</title>
+  <title>BDC-Adapter:Brownian Distance Covariance for Better Vision-Language Reasoning</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -137,7 +137,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
             <ul>
@@ -149,10 +149,7 @@
         </div>
         <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+        <img src="static/images/mot.png" alt="MY ALT TEXT"/>
       </div>
       </div>
     </div>
@@ -161,45 +158,58 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+<!-- Paper motivation -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <ul>
+              <li>The current state-of-the-art Tip-Adapter method, establishes a key-value cache model and evaluates the similarities of the query image feature and features of support few-shot training samples to perform classification.</li>
+              <li>However, we recognize that Tip-Adapter simply considers the covariance between each image feature pair, which only measures marginal distributions and captures linear relations.</li>
+              <li>In this paper, we introduce Brownian Distance Covariance (BDC) to the field of vision-language reasoning to provide a robust metric for measuring feature dependence. While classical covariance can only capture linear relations, Brownian covariance can model all possible relations.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+        <img src="static/images/bdc.png" alt="MY ALT TEXT"/>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End paper abstract -->
 
+  <!-- Paper experiment -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experiments</h2>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/main.png" alt="MY ALT TEXT"/>
+      </div>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/tab1.png" alt="MY ALT TEXT"/>
+      </div>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/example.png" alt="MY ALT TEXT"/>
+      </div>
+        <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/tab2.png" alt="MY ALT TEXT"/>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
 
 <section class="hero is-small">
   <div class="container is-max-desktop">
